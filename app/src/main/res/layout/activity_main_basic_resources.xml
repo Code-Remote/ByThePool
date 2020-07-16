@@ -34,9 +34,11 @@
                 android:text="backgrond color is set using @color/[resourcen_name]" />
 
             <TextView
+                style="@style/custom_style"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="first" />
+                android:text="This one has a very weird style" />
+
         </LinearLayout>
 
         <LinearLayout

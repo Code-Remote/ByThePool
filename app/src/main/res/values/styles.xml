@@ -5,6 +5,36 @@
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
+
+        <item name="colorDependingOnTheme">@color/colorPrimary</item>
+        <item name="styleDependingOnTheme">@style/custom_style</item>
+    </style>
+
+    <style name="AppTheme.RED" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <!-- android specific attritbutes-->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+
+        <!-- custome defined attritbutes in the attrs.xml file-->
+        <item name="colorDependingOnTheme">@android:color/holo_red_dark</item>
+        <item name="styleDependingOnTheme">@style/custom_style_for_red_theme</item>
+    </style>
+
+    <style name="custom_style">
+        <item name="android:minHeight">72dp</item>
+        <item name="android:background">@drawable/ic_launcher_background</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:paddingLeft">@dimen/defaultTextViewHeight</item>
+        <item name="android:paddingRight">16dp</item>
+    </style>
+
+    <style name="custom_style_for_red_theme">
+        <item name="android:minHeight">48dp</item>
+        <item name="android:paddingLeft">@dimen/defaultTextViewHeight</item>
+        <item name="android:textColor">@android:color/holo_red_dark</item>
+        <item name="android:paddingRight">16dp</item>
     </style>
 
 </resources>

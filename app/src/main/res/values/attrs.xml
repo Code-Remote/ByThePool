@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Custom theme attributes -->
+    <declare-styleable name="Theme">
+
+        <!-- Custom color attribute -->
+        <attr name="colorDependingOnTheme" format="color" />
+
+        <!-- Custom style attribute -->
+        <attr name="styleDependingOnTheme" format="reference" />
+    </declare-styleable>
+
+</resources>

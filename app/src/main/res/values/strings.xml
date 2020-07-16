@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">By The Pool</string>
+    <string name="im_a_string_resource">"I'm a string resource "</string>
 </resources>

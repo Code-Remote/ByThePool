@@ -7,21 +7,27 @@ fun main(args: Array<String>) {
     val quote = "He who fears he will suffer, already suffers because he fears."
     val author = "Michel De Montaigne"
 
-    passingValueThroughFunction(quote)
+    aFunctionWithParameter(quote)
 
-    val quoteAndAuthor = getAvalueBack(quote, author)
+    val quoteAndAuthor = aFunctionWithParamAndReturnValue(quote, author)
+    println(quoteAndAuthor)
 
+    println(aFunctionWithParamThatHasDefautlValue("Just A Quote But No Author"))
 }
 
 fun doSomethingFunctional() {
     println("I just did something functional")
 }
 
-fun passingValueThroughFunction(nameItWhatEverYouWant: String){
+fun aFunctionWithParameter(nameItWhatEverYouWant: String) {
     //default value
     //make it nullable
 }
 
-fun getAvalueBack(quote:String, author: String) : String {
+fun aFunctionWithParamAndReturnValue(quote: String, author: String): String {
+    return "$quote - $author"
+}
+
+fun aFunctionWithParamThatHasDefautlValue(quote: String, author: String = "Unknown"): String {
     return "$quote - $author"
 }

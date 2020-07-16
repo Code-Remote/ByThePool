@@ -9,7 +9,10 @@ class SimpleStaticQuoate{
     val author = "Evert"
 }
 
-//Constructor is to pass down parameters to construct the class
+/**
+ * Constructor is to pass down parameters to construct the class
+ * author has a default value of Unknown
+ */
 class Quote(val text: String, val author: String = "Unknown", isFromBook:Boolean = false){
 
     init{

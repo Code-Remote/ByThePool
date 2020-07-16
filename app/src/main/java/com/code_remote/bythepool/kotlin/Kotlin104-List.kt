@@ -28,7 +28,19 @@ fun main(args: Array<String>) {
         println(it)
     }
 
-    changeableList.forEachIndexed { index, c ->
-        println("get($index: has $c")
+    changeableList.forEachIndexed { index, friend ->
+        println("get($index: has $friend")
     }
+
+    for (i  in friends){
+        println(i)
+    }
+
+    for (i in 1..3) {
+        //you see i is used again but no problem var i lives inside of the for loop
+        println(i)
+    }
+
+
+
 }

@@ -6,16 +6,13 @@ import android.os.Bundle
 import android.util.Log
 import kotlinx.android.synthetic.main.activity_main.*
 
-class MainActivity : AppCompatActivity() {
+class ArchitectureActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         Log.e("TAG: MainActivity", "onCreate")
-        setContentView(R.layout.activity_main)
+        setContentView(R.layout.architecture_activity)
 
-        textView3.setOnClickListener {
-            val intent = Intent(this, ArchitectureActivity::class.java)
-            startActivity(intent)
-        }
+
     }
 
     override fun onStart() {

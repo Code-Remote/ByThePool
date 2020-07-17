@@ -23,11 +23,6 @@
             app:layout_constraintTop_toBottomOf="@+id/first">
 
             <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/im_a_string_resource" />
-
-            <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:background="@color/colorPrimary"
@@ -38,6 +33,15 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="This one has a very weird style" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:textColor="@color/colorPrimary"
+                android:maxLines="@integer/very_important_resource_number"
+                android:background="@drawable/ic_launcher_foreground"
+                android:fontFamily="@font/gotham_medium"
+                android:layout_height="@dimen/defaultTextViewHeight"
+                android:text="@string/im_a_string_resource" />
 
         </LinearLayout>
 

@@ -1,4 +1,4 @@
 <resources>
     <string name="app_name">By The Pool</string>
-    <string name="im_a_string_resource">"I'm a string resource "</string>
+    <string name="im_a_string_resource">"I'm a string resource with lots of other @resources used @fond, @dimen, @integer, @string, All These resources can be set to behave differently depending on Screen Size | Language | Phone orientation | Dark/Light mode"</string>
 </resources>
